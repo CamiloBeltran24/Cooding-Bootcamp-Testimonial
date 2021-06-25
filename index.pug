@@ -1,0 +1,12 @@
+extend pug/template.pug
+block content
+  section.main
+    .main-container 
+      .slide-buttons 
+        img(src="images/icon-prev.svg", alt="arrow prev" id="arrow-prev")
+        img(src="images/icon-next.svg", alt="arrow next" id="arrow-next")
+      .testimonials#box 
+        .testimonials__item
+          +main(images[0],names[0],testimonials[0],professions[0])
+        .testimonials__item
+          +main(images[1],names[1],testimonials[1],professions[1])
